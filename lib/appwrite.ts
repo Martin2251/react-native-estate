@@ -61,4 +61,23 @@ export async function login() {
       return false;
     }
   }
+
+  export async function getCurrentUser() {
+    try {
+      const result = await account.get();
+      if (result.$id) {
+        const userAvatar = avatar.getInitials(result.name);
+  
+        return {
+          ...result,
+          avatar: userAvatar.toString(),
+        };
+      }
+  
+      return null;
+    } catch (error) {
+      console.log(error);
+      return null;
+    }
+  }
   
