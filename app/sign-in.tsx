@@ -11,7 +11,7 @@ const SignIn = () =>{
                 <View className='px-10'>
                     <Text className='text-base text-center uppercase font-rubik text-black-200'>Welcome to Restate</Text>
                     <Text className='text-3xl font-rubik-bold text-black-300 text-center mt-2'>Lets get you close too {"\n"}
-                        <Text>Your ideal home</Text>
+                        <Text className='text-primary-300'>Your ideal home</Text>
                     </Text>
                 </View>
            </ScrollView>
