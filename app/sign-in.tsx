@@ -8,9 +8,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const SignIn = () =>{
     const handleLogin = async() =>{
         const result = await login();
+        console.log(result,"result")
         if (result) {
         console.log("Login Success")
         } else {
+            console.log(Error,"error")
           Alert.alert("Error", "Failed to login");
         }
       };
