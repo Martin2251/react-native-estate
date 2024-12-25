@@ -1,18 +1,23 @@
+import images from "@/constants/images";
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { SafeAreaView, Text, View,Image } from "react-native";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text className="font-bold font-rubik text-3xl text-amber-500 my-10">Welcome to re sestate</Text>
- 
-     
+ <SafeAreaView className="bg-white h-full">
+<View className="px-5">
+  <View className="flex flex-row items-center justify-between mt-5">
+    <View className="flex flex-row items-center">
+      <Image source={images.avatar} className="size-12 rounded-full" />
+      <View className="flex flex-col items-start ml-2 justify-center">
+
+      </View>
+
     </View>
+
+  </View>
+
+</View>
+ </SafeAreaView>
   );
 }
