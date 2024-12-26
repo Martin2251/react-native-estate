@@ -14,7 +14,7 @@ import icons from "@/constants/icons";
 
 import Search from "@/components/Search";
 import Filters from "@/components/Filters";
-import NoResults from "@/components/NoResults";
+// import NoResults from "@/components/NoResults";
 import { Card, FeaturedCard } from "@/components/Cards";
 
 import { useAppwrite } from "@/lib/useAppwrite";
@@ -57,6 +57,7 @@ const Home = () => {
 
   return (
     <SafeAreaView className="h-full bg-white">
+     
       <FlatList
         data={properties}
         numColumns={2}
