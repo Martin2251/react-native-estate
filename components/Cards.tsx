@@ -1,11 +1,19 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const FeaturedCard = () =>{
+export const FeaturedCard = () =>{
   return (
     <View>
       <Text>FeaturedCard</Text>
      </View>
   );
 }
-export default FeaturedCard
+
+
+export const Card = () =>{
+    return (
+      <View>
+        <Text>Card</Text>
+       </View>
+    );
+  }
