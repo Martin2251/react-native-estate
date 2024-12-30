@@ -20,6 +20,7 @@ import { Card, FeaturedCard } from "@/components/Cards";
 import { useAppwrite } from "@/lib/useAppwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import { getLatestProperties, getProperties } from "@/lib/appwrite";
+import NoResults from "@/components/NoResults";
 
 const Home = () => {
   const { user } = useGlobalContext();
